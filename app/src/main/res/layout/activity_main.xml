@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        ap:layout_constraintBottom_toBottomOf="parent"
+        ap:layout_constraintTop_toBottomOf="parent"
+        ap:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="msg"
+        ap:layout_constraintBottom_toBottomOf="parent"
+        ap:layout_constraintEnd_toStartOf="@+id/btn_cl"
+        ap:layout_constraintHorizontal_bias="0.5"
+        ap:layout_constraintStart_toStartOf="parent"
+        ap:layout_constraintTop_toTopOf="parent"
+        ap:layout_constraintVertical_bias="0.26" />
+
+    <Button
+        android:id="@+id/btn_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stream"
+        ap:layout_constraintBottom_toBottomOf="parent"
+        ap:layout_constraintEnd_toEndOf="parent"
+        ap:layout_constraintHorizontal_bias="0.5"
+        ap:layout_constraintStart_toEndOf="@+id/btn_cl"
+        ap:layout_constraintTop_toTopOf="parent"
+        ap:layout_constraintVertical_bias="0.26" />
+
+    <Button
+        android:id="@+id/btn_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cl"
+        ap:layout_constraintBottom_toBottomOf="parent"
+        ap:layout_constraintEnd_toStartOf="@+id/btn_stream"
+        ap:layout_constraintHorizontal_bias="0.5"
+        ap:layout_constraintStart_toEndOf="@+id/btn_msg"
+        ap:layout_constraintTop_toTopOf="parent"
+        ap:layout_constraintVertical_bias="0.26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
